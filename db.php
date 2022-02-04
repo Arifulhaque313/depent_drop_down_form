@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect("localhost","root","","dddl");
+$link = mysqli_connect("localhost","root","","tms");
 if(mysqli_connect_error()){
     die ("Connection Failed");
 }
