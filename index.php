@@ -3,13 +3,8 @@
  
  $div_query = "SELECT  * FROM `central_npf_domains` where domain_type_id = 4";
  $div_result = mysqli_query($link,$div_query);
-
-
- 
- 
  
  ?>
-
 
 
 <!doctype html>
@@ -45,6 +40,7 @@
         </div>
 
 
+<!-- form start  -->
         <form action="signup.php" method="post" class="p-3">
 
         <center><h6> <b>রেজিট্রেশন নির্দেশনাঃ </b> প্রত্যেক প্রশিক্ষণার্থীকে তার নিজ কার্যালয়ের অফিস / ইউনিয়ন সিলেক্ট করে রেজিস্ট্রেশন করতে হবে। <span><a href="#">বিস্তারিত</a></span> </h6></center>
@@ -99,36 +95,38 @@
             <div class="row ">
                 <div class="col-12 col-md-3 lg-md-3">
                 <label for="" class=""><span><b>নাম:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <input type="text" class="form-control">
+                <input type="text" name = "name" class="form-control" placeholder = "আপনার নাম লিখুন">
                 </div>
                 <div class="col-12 col-md-2 lg-md-2 ">
                 <label for="" class=""><span><b>পদবি:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <input type="text" class="form-control">
+                <input type="text" name="designation" class="form-control" placeholder ="সহকারি প্রোগ্রামার">
 
                 </div>
                 <div class="col-12 col-md-2 lg-md-2">
                 <label for="" class=""><span><b>জেন্ডার:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <select name="" id="" class="form-select">
-                    <option value="">পুরুষ</option>
-                    <option value="">মহিলা</option>
+                <select name="gender" id="" class="form-select">
+                    <option value="">Select Gender</option>
+                    <option value="male">পুরুষ</option>
+                    <option value="female">মহিলা</option>
                     
                 </select>
 
                 </div>
                 <div class="col-12 col-md-2 lg-md-2">
                 <label for="" class=""><span><b>মোবাইল নম্বর:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <input type="text" class="form-control">
+                <input type="text" name="mobile" class="form-control" placeholder="017********">
 
                 </div>
                 <div class="col-12 col-md-3 lg-md-3">
                 <label for="" class=""><span><b>ইমেইল:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <input type="text" class="form-control">
+                <input type="email" name="email" class="form-control" placeholder = "rohim111@gmail.com">
 
                 </div>
                 
                 
             </div>
         </div>
+
 
         <div class="mb-3">
 
@@ -146,7 +144,7 @@
                     <div class="col-12 col-md-2 col-lg-2 hidden" id="time">
 
                        <label for="" class=""><span><b>কত বার:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                       <input type="text" name = "time" class="form-control">
+                       <input type="text" name = "t_time" class="form-control">
 
                     </div>
                 </div>
@@ -160,8 +158,6 @@
         </div>
 
         </form>
-    
-    
 
   </div>
 
