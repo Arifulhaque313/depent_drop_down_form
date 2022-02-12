@@ -21,8 +21,8 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- css link -->
-    <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>TMS</title>
   </head>
   <body>
     
@@ -95,17 +95,17 @@
             <div class="row ">
                 <div class="col-12 col-md-3 lg-md-3">
                 <label for="" class=""><span><b>নাম:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <input type="text" name = "name" class="form-control" placeholder = "আপনার নাম লিখুন">
+                <input type="text" name = "name" class="form-control" placeholder = "আপনার নাম লিখুন" required>
                 </div>
                 <div class="col-12 col-md-2 lg-md-2 ">
                 <label for="" class=""><span><b>পদবি:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <input type="text" name="designation" class="form-control" placeholder ="সহকারি প্রোগ্রামার">
+                <input type="text" name="designation" class="form-control" placeholder ="সহকারি প্রোগ্রামার" required>
 
                 </div>
                 <div class="col-12 col-md-2 lg-md-2">
                 <label for="" class=""><span><b>জেন্ডার:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <select name="gender" id="" class="form-select">
-                    <option value="">Select Gender</option>
+                <select name="gender" id="" class="form-select" >
+                    <option >Select Gender</option>
                     <option value="male">পুরুষ</option>
                     <option value="female">মহিলা</option>
                     
@@ -114,12 +114,12 @@
                 </div>
                 <div class="col-12 col-md-2 lg-md-2">
                 <label for="" class=""><span><b>মোবাইল নম্বর:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <input type="text" name="mobile" class="form-control" placeholder="017********">
+                <input type="text" name="mobile" class="form-control" placeholder="017********" required>
 
                 </div>
                 <div class="col-12 col-md-3 lg-md-3">
                 <label for="" class=""><span><b>ইমেইল:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                <input type="email" name="email" class="form-control" placeholder = "rohim111@gmail.com">
+                <input type="email" name="email" class="form-control" placeholder = "rohim111@gmail.com" required>
 
                 </div>
                 
@@ -134,8 +134,8 @@
                     <div class="col-12 col-md-3 col-lg-3">
 
                        <label for="" class=""><span><b>আপনি কি পূর্বে প্রশিক্ষণটি নিয়েছেন:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                       <select name="training" id="training" class="form-select">
-                           <option value="">--Select--</option>
+                       <select name="training" id="training" class="form-select" >
+                           <option >--Select--</option>
                            <option value="yes">Yes</option>
                            <option value="no">No</option>
                        </select>
@@ -144,7 +144,7 @@
                     <div class="col-12 col-md-2 col-lg-2 hidden" id="time">
 
                        <label for="" class=""><span><b>কত বার:</b></span> ‍<b class="text-danger fs-5">*</b></label>
-                       <input type="text" name = "t_time" class="form-control">
+                       <input type="text" name = "training_time" class="form-control" requerd>
 
                     </div>
                 </div>
@@ -228,6 +228,13 @@
     });
 
 
+
+
+
+  
+
+
+// hiding district 
 
     // tranning 
 
